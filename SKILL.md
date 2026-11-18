@@ -88,6 +88,8 @@ Re-read each one afterwards (the API's mailbox list returns `signature_html`, wh
 
 ## Step 6. Test through Apollo
 
+First have the user close every Apollo tab that was open before Step 5, or reload it with Ctrl+Shift+R. A sequence page loaded earlier still holds the old signature, and its test button sends it even though the saved settings are clean. The rule then sees the marker and skips the email, so it looks as if nothing changed.
+
 The user sends a test of the first step of a sequence to an outside address. Check the received email:
 
 - the signature appears once, under the sign-off, in the right layout;

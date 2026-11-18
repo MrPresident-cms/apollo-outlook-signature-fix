@@ -45,4 +45,5 @@ Everything Claude does is written out in [`SKILL.md`](SKILL.md), step by step. T
 - The copy in your Sent Items will not show the signature. Check the email that arrives.
 - A logo pasted into an Outlook signature is usually embedded in the email itself. That doesn't work in a rule and shows as broken in Gmail. It needs a public `https://` address.
 - Any signature left in Apollo (the mailbox signature, a step's signature setting, or one typed into a step) contains your marker text, so the rule skips that email and the broken Apollo version goes out instead. Clear all three.
+- After clearing Apollo's signatures, reload every open Apollo tab (Ctrl+Shift+R) before sending a test. A page loaded earlier still sends the old signature.
 - The rule adds the signature at the very bottom of the email. In a reply, that is under the quoted conversation.
